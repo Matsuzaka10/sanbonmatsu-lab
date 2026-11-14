@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy</title>
+<title>Privacy Policy — sanbonmatsu lab</title>
 <style>
   body { margin: 0; background: #141a30; color: #ece8dc; font: 16px/1.7 system-ui, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 16px; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px; }
+  h2 { margin-top: 28px; }
   a { color: #9fc3ff; }
 </style>
 </head>
@@ -14,17 +15,35 @@
 <main>
   <h1>Privacy Policy</h1>
   <p>Last updated: November 14, 2026</p>
-  <p>"physics-shorts uploader" is a private tool used only by the owner of sanbonmatsu lab to publish its own videos to its own YouTube channel and Instagram account.</p>
-  <h2>Data we access</h2>
-  <p>With the owner's permission, the tool uploads videos to the owner's YouTube channel and reads basic channel and video statistics (such as view counts). It does not access data of any other users.</p>
-  <h2>How data is used and stored</h2>
-  <p>Data is used only to publish videos and to measure how they perform. Access credentials are stored encrypted and are never shared, sold or transferred to anyone. No personal data of viewers is collected.</p>
-  <h2>Revoking access</h2>
-  <p>Access can be revoked at any time from <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
-  <p>The tool's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+  <p>"physics-shorts uploader" (the "Tool") is a private tool used only by the owner of the YouTube channel sanbonmatsu lab (@sanbonmatsulab) to publish its own videos to its own YouTube channel and Instagram account.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>The Tool uses YouTube API Services. By using the Tool, you agree to be bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+    Information obtained through YouTube API Services is also subject to the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Information accessed, collected and stored</h2>
+  <ul>
+    <li>With the owner's permission (OAuth scopes youtube.upload and youtube.readonly), the Tool uploads videos to the owner's own channel and reads basic information and view statistics of the owner's own channel and videos.</li>
+    <li>The Tool stores only: the owner's OAuth refresh token (encrypted, in GitHub Secrets) and view statistics of the owner's own videos (in a private repository).</li>
+    <li>The Tool does not access, collect or store any data of other YouTube users or viewers, and does not use cookies or tracking.</li>
+  </ul>
+
+  <h2>How information is used and shared</h2>
+  <p>Information is used only to publish the owner's videos and to measure how they perform. It is never shared with, sold to, or transferred to any third party. The Tool's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Data retention and deletion</h2>
+  <ul>
+    <li>Access can be revoked at any time via the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. After revocation, the stored refresh token no longer works and is deleted from GitHub Secrets.</li>
+    <li>Stored statistics are kept only while the Tool is in use and are deleted within 30 days after the Tool stops being used or upon request.</li>
+    <li>Statistics obtained from YouTube API Services are refreshed or deleted at least every 30 days.</li>
+  </ul>
+
   <h2>Contact</h2>
   <p>Send a direct message to <a href="https://www.instagram.com/sanbonmatsu_lab/">@sanbonmatsu_lab</a> on Instagram.</p>
-  <p><a href="index.html">Back</a></p>
+  <p><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></p>
 </main>
 </body>
 </html>
